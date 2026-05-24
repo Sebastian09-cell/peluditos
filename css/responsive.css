@@ -1,0 +1,506 @@
+/*--------------------------------------------------------------------- 
+File Name: responsive.css 
+---------------------------------------------------------------------*/
+
+@media (min-width: 1343px) and (max-width: 1500px) {
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+    header {
+        position: inherit;
+    }
+    .banner_main .bluid h1 {
+    font-size: 67px;
+    line-height: 72px;
+   }
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+   header {
+        position: inherit;
+    }
+    .banner_main .bluid h1 {
+    font-size: 67px;
+    line-height: 72px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+        position: inherit;
+    }
+    .head-bottom {padding: 16px 0;}
+    ul.login_deteil li {padding-right: 24px;}
+    .banner_main .bluid h1 {
+    font-size: 67px;
+    line-height: 72px;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .d_none {display: none;}
+   header { position: inherit;}
+    .head-bottom {padding: 16px 0;}
+    ul.login_deteil li {padding-right: 24px;}
+    .banner_main .bluid h1 {
+    font-size: 50px;
+    line-height: 60px;
+}  
+.banner_main .bluid p {padding: 0 30px;}
+    .test_box {padding: 0 30px;}
+    .copyright p {text-align: center;}
+    ul.priva { text-align: center;}
+    .section::after {position: inherit; background: inherit; }
+.section::before {position: inherit; background: inherit; }
+}
+
+@media (max-width: 575px) {
+      .d_none {display: none;}
+      ul.email {margin-top: -33px;  }
+   header { position: inherit;}
+    .head-bottom {padding: 16px 0;}
+    ul.login_deteil li {padding-right: 24px;}
+    .banner_main .bluid h1 {
+    font-size: 50px;
+    line-height: 60px;
+}  .section::after {position: inherit; background: inherit; }
+.section::before {position: inherit; background: inherit; }
+.banner_main .bluid p {padding: 0 30px;}
+    .test_box {padding: 0 30px;}
+    .copyright p {text-align: center;}
+    ul.priva { text-align: center;}
+    .titlepage h2 {font-size: 32px;
+     line-height: 40px;
+    }
+    ul.conta {display: inherit;}
+    ul.conta li {
+        padding-bottom: 10px;
+    }
+}
+/**header **/
+@media (max-width: 768px) {
+    /* Estilo para el nombre en móvil */
+    .mobile_brand {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff; /* Ajusta al color de tu marca */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block !important;
+    }
+
+    /* Alineación perfecta entre el título y el botón MENÚ */
+    .header_flex {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 0;
+    }
+
+    /* Ocultamos el título de la parte superior (head_top) para que no se repita */
+    .head_top .nombre_header_central {
+        display: none !important;
+    }
+    .head_bottom {
+        margin-top: -50px; /* Ajusta este número hasta que quede a la altura del menú */
+        position: relative;
+        z-index: 10;
+        background: transparent !important; /* Para que no tape el fondo oscuro */
+    }
+
+    /* 2. Alineamos el texto a la izquierda del botón */
+    .header_flex {
+        display: flex !important;
+        justify-content: space-between !important; /* Separa el texto a la izq y menú a la der */
+        align-items: center !important; /* Centra verticalmente ambos elementos */
+        padding: 0 20px !important; /* Les da aire a los lados */
+        width: 100%;
+        margin-top: -45px; /* Ajusta este número poco a poco si ves que sube mucho */
+    }
+
+    /* 2. Mejoramos el aspecto del texto */
+    .mobile_brand {
+        display: inline-block !important;
+        color: #ffffff !important;
+        font-size: 18px !important;
+        font-weight: 800 !important;
+        letter-spacing: 1px;
+        margin: 0 !important; /* Quitamos márgenes que puedan moverlo */
+    }
+
+    /* 3. Ajuste opcional para el botón de menú si se ve muy grande */
+    .menu_control .openbtn {
+        padding: 5px 10px !important;
+        scale: 0.9; /* Lo hace un pelín más pequeño para que quepa mejor */
+        margin-top: -45px;
+    }
+}
+/** end header **/
+
+/**banner**/
+
+@media (max-width: 768px) {
+    .hero_peluditos {
+        padding: 40px 0 20px 0;
+        min-height: auto; /* Dejamos que el contenido mande el alto */
+    }
+
+    .container_hero {
+        flex-direction: column; /* Apilamos texto arriba e imagen abajo */
+        text-align: center;
+        gap: 30px;
+    }
+
+    /* --- TEXTO MÓVIL --- */
+    .hero_text {
+        order: 1; /* Asegura que el texto vaya primero */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand_box {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .hero_logo {
+        width: 50px;
+        margin-top: 0; /* Quitamos el margen extra en móvil */
+    }
+
+    .hero_tag {
+        margin-top: 0;
+    }
+
+    .hero_title {
+        font-size: 2.2rem; /* Tamaño manejable para celular */
+        margin-bottom: 15px;
+    }
+
+    .hero_p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    /* --- BOTONES MÓVIL --- */
+    .hero_btns {
+        flex-direction: column; /* Botones uno sobre otro */
+        width: 100%;
+        max-width: 300px; /* Para que no sean gigantes de lado a lado */
+        gap: 12px;
+    }
+
+    .btn_primary, .btn_secondary {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* --- IMAGEN MÓVIL --- */
+    .hero_image {
+        order: 2; /* Imagen debajo de los botones */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image_wrapper {
+        max-width: 320px; /* Evita que la imagen se vea enorme */
+    }
+
+    .image_wrapper img {
+        box-shadow: 10px 10px 0px #f0f4f8; /* Sombra más pequeña para móvil */
+    }
+
+    .experience_badge {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%); /* Centramos la medalla en móvil */
+        padding: 10px 15px;
+        width: 140px;
+    }
+
+    .experience_badge strong {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner_card h1 {
+        font-size: 26px; 
+    }
+    .banner_card p {
+        font-size: 14px;
+    }
+}
+/**end banner **/
+
+/**testimonial**/
+@media (max-width: 767px) {
+    
+    /* --- 1. HEADER (Apilado y Ordenado) --- */
+    .head_top .row {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 15px;              
+        padding: 10px 0;
+    }
+
+    .head_top .col-md-4 {
+        width: 100%;           
+        justify-content: center !important; 
+        flex: 0 0 auto;
+        display: flex;
+    }
+
+    .head_top .col-md-4:nth-child(2) { order: 1; } /* Nombre Arriba */
+    .head_top .col-md-4:first-child { order: 2; } /* WhatsApp Centro */
+    .head_top .col-md-4:last-child  { order: 3; } /* Redes Abajo */
+
+    .openbtn {
+        position: absolute;
+        top: 20px;   
+        right: 15px; 
+        z-index: 100;
+    }
+
+    .nombre_header li {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    /* --- 2. SECCIÓN CHOOSE (Rectángulo protector para el título) --- */
+    .choose {
+        padding: 40px 15px;
+        background-image: none; /* Opcional: quita el fondo general si prefieres */
+    }
+
+    .choose .titlepage h2 {
+        display: inline-block;
+        background-color: #4e85bb; /* Tapa la huella con el color del fondo */
+        color: #ffffff !important;
+        padding: 12px 25px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 5;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .teab_box {
+        margin-top: 20px;
+        padding: 30px 15px;
+        transform: none !important; /* Evita saltos raros en táctil */
+    }
+
+    /* --- 3. SECCIÓN TESTIMONIAL (Plan B para Testimonios) --- */
+    .testimonial {
+        padding-top: 60px;
+    }
+
+    .testimonial .titlepage h2 {
+        display: inline-block;
+        background-color: #4e85bb; /* Bloque sólido para legibilidad */
+        color: #ffffff !important;
+        padding: 12px 25px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        font-size: 24px;
+    }
+
+    /* Hacemos las huellas decorativas más pequeñas para que no invadan */
+    .testimonial::before, .testimonial::after {
+        background-size: 120px !important;
+        width: 120px;
+        height: 100px;
+        opacity: 0.5;
+    }
+
+    .test_box {
+        padding: 0 25px;
+        margin-top: 50px; /* Espacio para que la foto no choque con el título */
+    }
+
+    .test_box p {
+        padding: 30px 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .por_file {
+        margin-top: -60px; /* Ajuste de la foto de perfil */
+    }
+
+    .por_file h4 {
+        font-size: 22px;
+    }
+
+    /* Comilla decorativa más suave */
+    .left_di img, .right_di img {
+        width: 40px;
+        opacity: 0.3;
+    }
+}
+/**end testimonial**/
+
+/**choose**/
+@media (max-width: 767px) {
+    /* 1. Reducimos el espacio exagerado de arriba y abajo */
+    .choose {
+        padding: 40px 15px; 
+    }
+
+    /* 2. Ajustamos el título para que no choque con la huella */
+    .choose .titlepage h2 {
+        font-size: 26px;      /* Un poco más pequeño */
+        line-height: 32px;
+        margin-bottom: 20px;
+        padding: 0 10px;      /* Aire para que no toque los bordes */
+    }
+
+    /* 3. Tarjetas más compactas en móvil */
+    .teab_box {
+        margin-top: 20px;
+        padding: 30px 15px;
+        /* Evitamos que el hover sea molesto en pantallas táctiles */
+        transform: none !important; 
+    }
+
+    /* 4. El número (span) un poco más pequeño */
+    .teab_box span {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+    /* 5. Texto de los párrafos más legible */
+    .teab_box p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    @media (max-width: 767px) {
+
+    /* Creamos el rectángulo sólido alrededor del título */
+    .choose .titlepage h2 {
+        display: inline-block;        /* Hace que el fondo solo cubra el texto */
+        background-color: #4e85bb;    /* Mismo color azul del fondo para tapar la huella */
+        color: #ffffff !important;    /* Texto en blanco para máximo contraste */
+        padding: 12px 20px;           /* El "aire" del rectángulo */
+        border-radius: 10px;          /* Bordes un poco redondeados para que se vea moderno */
+        position: relative;           /* Asegura que se ponga por encima de la huella */
+        z-index: 5;                   /* Lo trae al frente */
+        line-height: 1.4;             /* Mejora el espacio entre líneas si el texto salta */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave para separar del fondo */
+        
+    }
+
+    /* Centramos el contenedor para que el rectángulo no se mueva */
+    .choose .titlepage {
+        text-align: center;
+        padding: 0 10px;
+        background: transparent !important; /* Quitamos cualquier otro fondo del contenedor */
+        border-radius: 15px;
+    }
+}
+}
+@media (max-width: 768px) {
+    /* 1. Ajuste del contenedor general */
+    .titlepage {
+        padding: 40px 15px !important;
+        background: transparent !important; /* Quitamos el recuadro azul sólido si lo tiene */
+        width: 100% !important;
+    }
+
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 2. El Tag de Excelencia (el texto verde) */
+    .excelencia-tag {
+        font-size: 14px !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #25D366 !important; /* Verde vibrante */
+        margin-bottom: 10px;
+        display: block;
+        font-weight: 800;
+    }
+
+    /* 3. Título Principal */
+    .titlepage h2 {
+        font-size: 28px !important; /* Tamaño más cómodo para móvil */
+        color: #ffffff !important; /* Blanco para que resalte sobre el fondo de huellas */
+        line-height: 1.2 !important;
+        font-weight: 800;
+        margin: 0 auto 15px auto;
+        max-width: 90%;
+    }
+
+    /* 4. El Span de "Peluditos" (Resaltado) */
+    .titlepage h2 .highlight {
+        color: #ffffff !important; /* O puedes usar el azul claro si prefieres */
+        display: block; /* Hace que "Peluditos?" baje a la siguiente línea si es necesario */
+    }
+
+    /* 5. El divisor verde centrado */
+    .divider-verde {
+        width: 60px !important;
+        height: 4px !important;
+        background-color: #25D366 !important;
+        margin: 0 auto !important;
+        border-radius: 10px;
+    }
+}
+/**end choose**/
+/**contact**/
+@media (min-width: 992px) {
+    .map_resposive {
+        margin-top: 0;
+        padding-left: 30px;
+    }
+}
+/**contact page**/
+@media (max-width: 768px) {
+    .testimonial-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-testimonio {
+        max-width: 140px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .esquina-img { width: 30px; opacity: 0.3; } /* Más pequeñas en celular */
+}
+/* --- Ajuste para que las fotos se apilen en celulares --- */
+@media (max-width: 768px) {
+    .gallery-row {
+        flex-direction: column; /* Cambia de fila a columna */
+        align-items: center;    /* Centra las imágenes */
+        gap: 30px;              /* Espacio vertical entre las fotos */
+    }
+
+    .gallery-item {
+        width: 90%;             /* Que ocupen casi todo el ancho de la pantalla */
+        max-width: none;        /* Quitamos el límite para que no se vean muy flacas */
+    }
+
+    .img-test {
+        height: 350px;          /* Ajustamos un poco la altura para que no sea infinita */
+    }
+}
+/**end contact**/
